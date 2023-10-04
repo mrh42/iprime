@@ -1,0 +1,77 @@
+Testing 2**61-1 with fft size 2**2 for 0 iterations
+Residue 0x0000000000000000
+That took 26.965µs for 59 iterations which is 457ns per iteration
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+
+
+Testing 2**521-1 with fft size 2**5 for 0 iterations
+Residue 0x0000000000000000
+That took 2.281148ms for 519 iterations which is 4.395µs per iteration
+
+real	0m0.007s
+user	0m0.007s
+sys	0m0.000s
+
+
+Testing 2**4423-1 with fft size 2**8 for 0 iterations
+Residue 0x0000000000000000
+That took 90.270631ms for 4421 iterations which is 20.418µs per iteration
+
+real	0m0.096s
+user	0m0.093s
+sys	0m0.004s
+
+
+Testing 2**44497-1 with fft size 2**11 for 0 iterations
+Residue 0x0000000000000000
+That took 10.180282045s for 44495 iterations which is 228.796µs per iteration
+
+real	0m10.191s
+user	0m10.199s
+sys	0m0.020s
+
+
+
+Testing 2**216091-1 with fft size 2**14 for 0 iterations
+Residue 0x0000000000000000
+That took 8m16.262242539s for 216089 iterations which is 2.296564ms per iteration
+
+real	8m16.281s
+user	8m16.932s
+sys	0m0.616s
+
+
+-----------------------------------------------------------
+Testing 2**216091-1 with fft size 2**14 for 1 iterations
+Residue 0x000000000000000E
+That took 3.714541ms for 1 iterations which is 3.714541ms per iteration
+Testing 2**3021377-1 with fft size 2**18 for 1 iterations
+Residue 0x000000000000000E
+That took 63.679293ms for 1 iterations which is 63.679293ms per iteration
+Testing 2**13466917-1 with fft size 2**20 for 1 iterations
+Residue 0x000000000000000E
+That took 275.33182ms for 1 iterations which is 275.33182ms per iteration
+Testing 2**20000047-1 with fft size 2**20 for 1 iterations
+Residue 0x000000000000000E
+That took 262.84451ms for 1 iterations which is 262.84451ms per iteration
+Testing 2**24036583-1 with fft size 2**21 for 1 iterations
+Residue 0x000000000000000E
+That took 746.583176ms for 1 iterations which is 746.583176ms per iteration
+
+Testing 2**99998783-1 with fft size 2**23 for 1 iterations
+Residue 0x000000000000000E
+That took 5.68998001s for 1 iterations which is 5.68998001s per iteration
+
+-----------------------------------------------------------
+m@h0:[~/go/src/iprime] ./iprime -iterations 1  286507049
+panic: Don't have unrolled fft for log_n = 12
+
+goroutine 1 [running]:
+main.NewFftUnrolled(0xc)
+	/home/m/go/src/iprime/fft.go:315 +0x4ab
+
+-----------------------------------------------------------
+cpu: Intel(R) Xeon(R) Gold 6146 CPU @ 3.20GHz
