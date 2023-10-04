@@ -1,8 +1,6 @@
 // Automatically generated - DO NOT EDIT
 // Regenerate with: go run mod_math.go mod_math_noasm.go gen_ffts.go
 
-// +build !amd64,!arm
-
 // Unrolled FFTs
 
 package main

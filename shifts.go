@@ -1,7 +1,6 @@
 // Automatically generated - DO NOT EDIT
 // Regenerate with: go run mod_math.go gen_shifts.go | gofmt >shifts.go
 
-// +build !amd64,!arm
 
 // Unrolled mod_shifts
 

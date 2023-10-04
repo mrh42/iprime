@@ -1,6 +1,5 @@
 // Go alternatives for assembler routines
 
-// +build !amd64,!arm
 
 package main
 
